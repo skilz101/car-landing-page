@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BankGothic Md BT';
+}
+
+body{
+    background: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main div{
+    height: 107vh;
+    padding: 20px
+}
+
+
+
+/*================================================== nav=============================================*/
+
+nav{
+    z-index: 100;
+    display: inline-flex;
+    width: 90%;
+    padding: 20px 2%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+nav ul li{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    margin-left: 50px;
+    z-index: 100;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover{
+    opacity: 0.5;
+}
+
+.menu>path{
+    fill:white;
+}
+
+.menu{
+    width: 30px;
+    margin-right: 20px;
+}
+
+::placeholder{
+    font-size: 30px;
+    color: white;
+}
+
+input{
+    background: transparent;
+    border: none;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.input[type="search"]{
+    color: white;
+}
+
+.logo{
+    width: 150px;
+    position: absolute;
+    right: -90px;
+    top: 20px;
+}
+
+/*========================================= content =====================================*/
+
+.content{
+    position: absolute;
+    top: 70px;
+    height: auto;
+    z-index:100;
+}
+
+.content h1{
+    font-size: 130px;
+    color: #fff;
+    position: absolute;
+    left: 90px;
+    top: 120px;
+}
+
+.content h2{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 20px;
+    font-family: 'Lucida Sans';
+    color: #ffff;
+    position: absolute;
+    left: 100px;
+    top: 240px;
+}
+
+.car{
+    position: absolute;
+    left: 550px;
+    z-index: 100;
+    top: 120px;
+    height: 420px;
+    animation-name: move;
+    animation-duration: 2s;
+}
+
+.content p{
+    color: #fff;
+    width: 490px;
+    position: absolute;
+    top: 310px;
+    left: 100px;
+}
+
+.content a{
+    color: rgba(255,255,255,0.5);
+    position: relative;
+    top: 390px;
+    border: 1px solid black;
+    left: 100px;
+    padding: 12px;
+    text-decoration: none;
+    background: rgb(41,43,58);
+}
+
+.half{
+    background: rgb(252,152,28);
+    clip-path:polygon(0 0,100% 0, 72% 100%,0% 100%);
+}
+
+/*=================================================== car stats ==========================*/
+
+.car-side{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.car-side div{
+    height: 103px;
+    position: relative;
+    top: 540px;
+    right: 20px;
+    width: auto;
+}
+
+.title{
+    color: grey;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.value{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+span{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+
+/*============================= animation ============================*/
+
+
+/*
+@keyframes move{
+    from{transform: translate(400px, -200px)}
+    to{transform: translate(0px,0px)}
+}
+*/
+
+
+@keyframes move{
+    from{transform: translate(400px, 0px)}
+    to{transform: translate(0px,0px)}
+}
